@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countries flag</title>
+</head>
+<body>
+    <div>
+
+        <h1>THE TWO GREAT NATIONS FLAG</h1>
+<ul id="images">
+<li id="ind"><img title="india" style="width: 30%;" src="https://www.shutterstock.com/image-illustration/flags-pakistan-india-divided-diagonally-260nw-453189925.jpg" alt=""></li>
+<li id="pak"><img title="pakistan" style="width: 30%;" src="https://st.depositphotos.com/1052036/3848/v/450/depositphotos_38488631-stock-illustration-india-and-pakistan-unity.jpg" alt=""></li>
+<button><li id="link"><a href="http://google.com">google</a></li></button>
+</ul>
+    </div>
+</body>
+<script>
+    document.getElementById("images").addEventListener("click",function(){
+        alert("images has been clicked")
+    })
+document.getElementById("ind").addEventListener("click",function(){
+
+    alert("india")
+})
+
+document.getElementById("pak").addEventListener("click",function(){
+    setTimeout(function(){
+alert("pakistan zindabad")
+},5000)
+})
+document.getElementById("link").addEventListener("click",function(e){
+alert("google has been clicked")
+  e.preventDefault()
+})
+
+</script>
+</html>

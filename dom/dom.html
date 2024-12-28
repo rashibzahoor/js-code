@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- to work with html documents for javascript we use DOM(DOCUMENT OBJECT MODEL) 
+     By using dom we can target specific elements in a html page
+     By using dom we can insert dynamic content within a page also we 
+     can style a property using HTML DOM-->
+<!-- Id -->
+<h2 id="h2"></h2>
+
+<!-- class -->
+<div class="para"></div>
+
+<!-- tag -->
+<p></p>
+
+<!-- query -->
+
+<div class="qu"></div>
+
+<!-- queryselectorall -->
+ <p class="qsa"></p>
+ <p class="qsa"></p>
+ <p class="qsa"></p>
+   
+</body>
+
+<script>
+document.getElementById("h2").innerHTML="html course"
+document.getElementById("h2").style.backgroundColor="yellow"
+document.getElementById("h2").style.color="red"
+
+let pa= document.getElementsByClassName("para")
+if(pa.length>0){
+pa[0].innerHTML="javascript"
+pa[0].style.color="white"
+pa[0].style.backgroundColor="blue"
+}
+
+let tag=document.getElementsByTagName("p")
+if(tag.length>0){
+tag[0].innerHTML="hello rashib"
+tag[0].style.backgroundColor="brown"
+tag[0].style.color="white"
+
+}
+
+let qu=document.querySelector(".qu")
+if(qu){
+
+qu.innerHTML="document object model"
+qu.style.color="white"
+qu.style.backgroundColor="chocolate"
+}
+let qsa=document.querySelectorAll(".qsa")
+qsa.forEach((rashib)=>{
+
+rashib.innerHTML="rashibzahoor"
+rashib.style.backgroundColor="red"
+rashib.style.color="white"
+})
+
+
+
+</script>
+</html>

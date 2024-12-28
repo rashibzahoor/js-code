@@ -1,0 +1,56 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form event</title>
+</head>
+<body>
+
+<!-- form events
+1=>onfocus()=this will trigger when you land a particular input field;
+2=>onchange()=this will trigger when you enter input and leaves the input field;
+3=>oninput()=this will trigger when you enter any value within a field;
+4=>onblur()=this will trigger when you visit the input field and leaves;
+
+ -->
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" onfocus="focu()" placeholder="enter your name">
+</br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" onchange="chang()" placeholder="enter your email">
+</br>
+    <label for="mobile">Mobile No:</label>
+    <input type="number" id="mobile" onblur="blurr()" placeholder="enter your mobile no">
+</br>
+    <label for="adress">Adress:</label>
+    <textarea name="adress" oninput="inputt()" rows="5" cols="20" id="residence"></textarea>
+</br>
+  <a href="http://google.com"> <button><input type="submit"></button> </a>
+</body>
+<script>
+function focu(){
+
+document.getElementById("name").style.backgroundColor="red"
+
+}
+function chang(){
+document.getElementById("email").style.backgroundColor="yellow"
+
+}
+
+function blurr(){
+
+document.getElementById("mobile").style.backgroundColor="blue"
+
+}
+
+function inputt(){
+
+    document.getElementById("residence").style.color="orange"
+}
+</script>
+</html>
